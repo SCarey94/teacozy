@@ -2,7 +2,6 @@ header {
   display: flex;
   width: 100%;
   position: fixed;
-  justify-content: flex-end;
   align-items: center;
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -12,6 +11,10 @@ header {
   background-color: black;
   opacity: 0.9;
   z-index: 20;
+  top: 0;
+}
+nav {
+  text-align: right;
 }
 nav a {
   display: inline-flex;
@@ -21,9 +24,6 @@ nav a {
 header img {
   height: 50px;
   padding-left: 10px;
-}
-#logo {
-  justify-content: flex-start;
 }
 body {
   font-family: Helvetica;
@@ -36,10 +36,11 @@ body {
 }
 .flex-container {
   display: flex;
-  position: relative;
-  top: 70px;
   justify-content: center;
   flex-wrap: wrap;
+}
+main {
+  position: relative;
 }
 #mission {
   display: flex;
@@ -60,9 +61,11 @@ div {
   display: block;
 }
 h2, h3, h4 {
-  display: block;
   margin: 0;
   padding: 10px;
+}
+h2 {
+  display: block;
 }
 .item img {
   display: block;
@@ -84,7 +87,6 @@ h2, h3, h4 {
   padding-top: 70px;
 }
 #locations {
-  display: flex;
   background-image: url(img-locations-background.jpg);
   height: 500px;
   align-items: center;
