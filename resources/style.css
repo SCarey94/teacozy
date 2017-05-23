@@ -19,9 +19,11 @@ nav a {
   padding: 10px;
 }
 header img {
-  justify-content: flex-start;
   height: 50px;
   padding-left: 10px;
+}
+#logo {
+  justify-content: flex-start;
 }
 body {
   font-family: Helvetica;
@@ -37,6 +39,7 @@ body {
   position: relative;
   top: 70px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #mission {
   display: flex;
@@ -58,6 +61,8 @@ div {
 }
 h2, h3, h4 {
   display: block;
+  margin: 0;
+  padding: 10px;
 }
 .item img {
   display: block;
@@ -69,8 +74,14 @@ h2, h3, h4 {
   text-align: center;
   padding: 5px;
 }
-.item {
+.items {
   flex-wrap: wrap;
+}
+#featured {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
 }
 #locations {
   display: flex;
@@ -79,14 +90,28 @@ h2, h3, h4 {
   align-items: center;
   justify-content: center;
 }
-.locations {
+.location {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
   margin: 5px 20px;
   flex-basis: 280px;
+  background-color: black;
+}
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+.flex-container.locations {
+  padding-top: 5px;
 }
 p {
   display: block;
+}
+#contact {
+  height: 200px;
+}
+#copyright {
+  text-align: left;
 }
